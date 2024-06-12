@@ -6,6 +6,6 @@ class BlogPost(models.Model):
    content = models.TextField() 
    published_date = models.DateTimeField(auto_now_add=True)
 
-
+# str method : returns a string representation of a model instance
    def __str__(self):
       return self.title
